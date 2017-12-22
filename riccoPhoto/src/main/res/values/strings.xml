@@ -1,0 +1,10 @@
+<resources>
+    <string name="photo_picker_lib_crop">裁剪</string>
+    <string name="photo_picker_lib_cancel">取消</string>
+    <string name="photo_picker_lib_yes">确定</string>
+    <string name="photo_picker_lib_finish">完成</string>
+    <string name="photo_picker_lib_all_photo">全部照片</string>
+    <string name="photo_picker_lib_max_hint">您最多只能选择%1$d张照片！</string>
+    <string name="photo_picker_lib_save_hint">无法保存照片，请检查SD卡是否可用</string>
+    <string name="photo_picker_lib_permission_hint">使用此功能需要开启权限：</string>
+</resources>
