@@ -34,7 +34,7 @@ public class PhotoProviderUtil {
                     if (allPic.containsKey(parentName)) {
                         allPic.get(parentName).add(path);
                     } else {
-                        ArrayList<String> chileList = new ArrayList<String>();
+                        ArrayList<String> chileList = new ArrayList<>();
                         chileList.add(path);
                         allPic.put(parentName, chileList);
                     }

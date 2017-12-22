@@ -17,6 +17,7 @@ public class PhotoPicker {
      * @param crop       是否裁剪 ，只对单选有效
      * @param cropWidth  裁剪宽度，只对单选有效
      * @param cropHeight 裁剪高度，只对单选有效
+     * @param paths      去重，默认要勾选的数据
      * @param callBack   选择图片回调
      */
     private static void selectPic(Activity context, int picNum, boolean crop, int cropWidth, int cropHeight, String[] paths, @NonNull PicCallBack callBack) {
