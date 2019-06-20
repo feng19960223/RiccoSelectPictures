@@ -210,7 +210,7 @@
 
 https://github.com/feng19960223/RiccoSelectPictures/blob/master/app/release/app-release.apk
 
-<img src="https://github.com/feng19960223/RiccoSelectPictures/blob/master/screenshots/%E5%89%AA%E8%A3%81%E6%AD%A3%E6%96%B9%E5%BD%A2.png" width="260"/>
+<img src="https://github.com/feng19960223/RiccoSelectPictures/blob/master/screenshots/%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80.png" width="260"/>
 
 # 效果图
 
