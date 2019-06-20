@@ -11,6 +11,93 @@
 * 去重，去重，去重
 * 无限选择张数;
 
+## 流程图
+
+![脑图](http://upload-images.jianshu.io/upload_images/4325663-72aa1f8e04ba56a6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240 "脑图")
+
+## 类
+
+### [PhotoPicker](https://github.com/feng19960223/RiccoSelectPictures/blob/master/riccoPhoto/src/main/java/lib/ricco/photo/PhotoPicker.java "class")
+
+* 得到一张无剪裁图片
+
+#### static void	selectPic(android.app.Activity context, PhotoPicker.PicCallBack callBack)
+
+    context -
+
+    callBack - 选择图片回调
+
+* 得到一张正方形裁剪的图片
+
+#### static void	selectPic(android.app.Activity context, int cropWH, PhotoPicker.PicCallBack callBack)
+
+    context -
+
+    cropWH - 裁剪宽高
+
+    callBack - 选择图片回调
+
+* 得到一张长方形裁剪的图片
+
+#### static void	selectPic(android.app.Activity context, int cropW, int cropH, PhotoPicker.PicCallBack callBack)
+
+    context -
+
+    cropW - 裁剪宽
+
+    cropW - 裁剪高
+
+    callBack - 选择图片回调
+
+* 得到picNum张图片
+
+#### static void	selectPics(android.app.Activity context, int picNum, PhotoPicker.PicCallBack callBack)
+
+    context -
+
+    picNum - 选择图片张数
+
+    callBack - 选择图片回调
+
+* 得到picNum张图片，去重复
+
+#### static void	selectPics(android.app.Activity context, int picNum, java.lang.String[] paths , PhotoPicker.PicCallBack callBack)
+
+    context -
+
+    picNum - 选择图片张数
+
+    paths - 默认要勾选的数据
+
+    callBack - 选择图片回调
+
+* 得到无限张图片
+
+#### static void	selectPics(android.app.Activity context, PhotoPicker.PicCallBack callBack)
+
+    context -
+
+    callBack - 选择图片
+
+* 得到无限张图片，去重复
+
+#### static void	selectPics(android.app.Activity context, java.lang.String[] paths , PhotoPicker.PicCallBack callBack)
+
+    context -
+
+    paths - 默认要勾选的数据
+
+    callBack - 选择图片回调
+
+
+## 接口
+
+### [PhotoPicker.PicCallBack](https://github.com/feng19960223/RiccoSelectPictures/blob/master/riccoPhoto/src/main/java/lib/ricco/photo/PhotoPicker.java "interface")
+
+#### onPicSelected(java.lang.String[] path)
+
+    path - 所有选中的图片地址
+
 ## 样式修改
 * 可以直接在自己的主项目里新建名字相同的资源文件，目前只支持，文案，颜色，和部分图片的修改，不建议修改styles
 
@@ -119,92 +206,9 @@
     </tr>
 </table>
 
-## 流程图
+# [DEMO 下载](https://github.com/feng19960223/RiccoSelectPictures/blob/master/app/release/app-release.apk "apk")
 
-![脑图](http://upload-images.jianshu.io/upload_images/4325663-72aa1f8e04ba56a6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240 "脑图")
-
-## 类
-
-### [PhotoPicker](https://github.com/feng19960223/RiccoSelectPictures/blob/master/riccoPhoto/src/main/java/lib/ricco/photo/PhotoPicker.java "class")
-
-* 得到一张无剪裁图片
-
-#### static void	selectPic(android.app.Activity context, PhotoPicker.PicCallBack callBack)
-
-    context -
-
-    callBack - 选择图片回调
-
-* 得到一张正方形裁剪的图片
-
-#### static void	selectPic(android.app.Activity context, int cropWH, PhotoPicker.PicCallBack callBack)
-
-    context -
-
-    cropWH - 裁剪宽高
-
-    callBack - 选择图片回调
-
-* 得到一张长方形裁剪的图片
-
-#### static void	selectPic(android.app.Activity context, int cropW, int cropH, PhotoPicker.PicCallBack callBack)
-
-    context -
-
-    cropW - 裁剪宽
-
-    cropW - 裁剪高
-
-    callBack - 选择图片回调
-
-* 得到picNum张图片
-
-#### static void	selectPics(android.app.Activity context, int picNum, PhotoPicker.PicCallBack callBack)
-
-    context -
-
-    picNum - 选择图片张数
-
-    callBack - 选择图片回调
-
-* 得到picNum张图片，去重复
-
-#### static void	selectPics(android.app.Activity context, int picNum, java.lang.String[] paths , PhotoPicker.PicCallBack callBack)
-
-    context -
-
-    picNum - 选择图片张数
-
-    paths - 默认要勾选的数据
-
-    callBack - 选择图片回调
-
-* 得到无限张图片
-
-#### static void	selectPics(android.app.Activity context, PhotoPicker.PicCallBack callBack)
-
-    context -
-
-    callBack - 选择图片
-
-* 得到无限张图片，去重复
-
-#### static void	selectPics(android.app.Activity context, java.lang.String[] paths , PhotoPicker.PicCallBack callBack)
-
-    context -
-
-    paths - 默认要勾选的数据
-
-    callBack - 选择图片回调
-
-
-## 接口
-
-### [PhotoPicker.PicCallBack](https://github.com/feng19960223/RiccoSelectPictures/blob/master/riccoPhoto/src/main/java/lib/ricco/photo/PhotoPicker.java "interface")
-
-#### onPicSelected(java.lang.String[] path)
-
-    path - 所有选中的图片地址
+https://github.com/feng19960223/RiccoSelectPictures/blob/master/app/release/app-release.apk
 
 # 效果图
 
