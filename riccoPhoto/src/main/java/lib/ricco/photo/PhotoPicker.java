@@ -20,7 +20,7 @@ public class PhotoPicker {
      * @param paths      去重，默认要勾选的数据
      * @param callBack   选择图片回调
      */
-    private static void selectPic(Activity context, int picNum, boolean crop, int cropWidth, int cropHeight, String[] paths, @NonNull PicCallBack callBack) {
+    public static void selectPicBase(Activity context, int picNum, boolean crop, int cropWidth, int cropHeight, String[] paths, @NonNull PicCallBack callBack) {
         PhotoOptions options = new PhotoOptions();
         options.crop = crop;
         options.takeNum = picNum;
@@ -37,7 +37,7 @@ public class PhotoPicker {
      * @param callBack 选择图片回调
      */
     public static void selectPic(Activity context, @NonNull PicCallBack callBack) {
-        selectPic(context, 1, false, 0, 0, null, callBack);
+        selectPicBase(context, 1, false, 0, 0, null, callBack);
     }
 
     /**
@@ -48,7 +48,20 @@ public class PhotoPicker {
      * @param callBack 选择图片回调
      */
     public static void selectPic(Activity context, int cropWH, @NonNull PicCallBack callBack) {
-        selectPic(context, 1, true, cropWH, cropWH, null, callBack);
+        selectPicBase(context, 1, true, cropWH, cropWH, null, callBack);
+    }
+
+
+    /**
+     * 得到一张长方形裁剪的图片
+     *
+     * @param context
+     * @param cropW   裁剪宽
+     * @param cropH   裁剪高
+     * @param callBack 选择图片回调
+     */
+    public static void selectPic(Activity context, int cropW,int cropH, @NonNull PicCallBack callBack) {
+        selectPicBase(context, 1, true, cropW, cropH, null, callBack);
     }
 
     /**
@@ -59,7 +72,7 @@ public class PhotoPicker {
      * @param callBack 选择图片回调
      */
     public static void selectPics(Activity context, int picNum, @NonNull PicCallBack callBack) {
-        selectPic(context, picNum, false, 0, 0, null, callBack);
+        selectPicBase(context, picNum, false, 0, 0, null, callBack);
     }
 
     /**
@@ -71,7 +84,7 @@ public class PhotoPicker {
      * @param callBack 选择图片回调
      */
     public static void selectPics(Activity context, int picNum, String[] paths, @NonNull PicCallBack callBack) {
-        selectPic(context, picNum, false, 0, 0, paths, callBack);
+        selectPicBase(context, picNum, false, 0, 0, paths, callBack);
     }
 
     /**
@@ -81,7 +94,7 @@ public class PhotoPicker {
      * @param callBack 选择图片回调
      */
     public static void selectPics(Activity context, @NonNull PicCallBack callBack) {
-        selectPic(context, -1, false, 0, 0, null, callBack);
+        selectPicBase(context, -1, false, 0, 0, null, callBack);
     }
 
     /**
@@ -92,9 +105,12 @@ public class PhotoPicker {
      * @param callBack 选择图片回调
      */
     public static void selectPics(Activity context, String[] paths, @NonNull PicCallBack callBack) {
-        selectPic(context, -1, false, 0, 0, paths, callBack);
+        selectPicBase(context, -1, false, 0, 0, paths, callBack);
     }
 
+    /**
+     * 图片回调
+     */
     public interface PicCallBack {
         void onPicSelected(String[] path);
     }

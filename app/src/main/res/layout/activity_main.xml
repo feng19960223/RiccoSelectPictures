@@ -14,28 +14,34 @@
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="1张，剪裁" />
+        android:text="1张，剪裁，正方形" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="指定张" />
+        android:text="1张，剪裁,长方形" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="指定张，去重" />
+        android:text="指定张" />
 
     <Button
         android:id="@+id/button5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="无限张" />
+        android:text="指定张，去重" />
 
     <Button
         android:id="@+id/button6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="无限张" />
+
+    <Button
+        android:id="@+id/button7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="无限张，去重" />
