@@ -18,7 +18,7 @@
 <table>
     <tr>
         <td>名称</td>
-        <td>内容</td>
+        <td>默认内容</td>
         <td>说明</td>
     </tr>
     <tr>
@@ -50,6 +50,72 @@
         <td>photo_picker_lib_save_hint</td>
         <td>无法保存照片，请检查SD卡是否可用</td>
         <td>文件存储异常是提示</td>
+    </tr>
+</table>
+
+### Color
+<table>
+    <tr>
+        <td>名称</td>
+        <td>默认内容</td>
+        <td>说明</td>
+    </tr>
+    <tr>
+        <td>colorRiccoPrimary</td>
+        <td>#3F51B5</td>
+        <td>相当于 系统colorPrimary，控制页面整体颜色</td>
+    </tr>
+    <tr>
+        <td>colorRiccoPrimaryDark</td>
+        <td>#303F9F</td>
+        <td>相当于 系统colorPrimaryDark，控制页面整体颜色</td>
+    </tr>
+    <tr>
+        <td>colorRiccoAccent</td>
+        <td>#303F9F</td>
+        <td>相当于 系统colorAccent，控制页面整体颜色</td>
+    </tr>
+    <tr>
+        <td>color_ricco_btn_normal</td>
+        <td>#FFFF4081</td>
+        <td>确定按钮，默认背景颜色</td>
+    </tr>
+    <tr>
+        <td>color_ricco_btn_pressed</td>
+        <td>#CCFF4081</td>
+        <td>确定按钮，按下背景颜色</td>
+    </tr>
+</table>
+
+### drawbale
+<table>
+    <tr>
+        <td>名称</td>
+        <td>说明</td>
+    </tr>
+    <tr>
+        <td>ic_camera_alt_black_24dp.xml</td>
+        <td>相机，应用中点击相机，会打开手机拍照</td>
+    </tr>
+    <tr>
+        <td>ic_chevron_left_black_24dp.xml</td>
+        <td>返回箭头</td>
+    </tr>
+    <tr>
+        <td>ic_expand_less_black_24dp.xml</td>
+        <td>向上箭头</td>
+    </tr>
+    <tr>
+        <td>ic_expand_more_black_24dp.xml</td>
+        <td>向下箭头</td>
+    </tr>
+    <tr>
+        <td>ic_photo_library_black_24dp.xml</td>
+        <td>图片展位图，使用Glide加载本地文件，基本上看不到</td>
+    </tr>
+    <tr>
+        <td>selector_btn_complete.xml</td>
+        <td>确定按钮背景颜色</td>
     </tr>
 </table>
 
