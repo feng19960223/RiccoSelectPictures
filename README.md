@@ -1,12 +1,57 @@
 # RiccoSelectPictures
-照片选择库，支持(单一、指定、无限)张图片选择，单张图片剪裁，拍照，去重
+
+## 建议下载源码，根据自己的Glide，和SDK版本进行特定的编译
+
+照片选择库，支持(单一、指定、无限)张图片选择，单张图片剪裁（正方形，长方形），拍照，去重
 
 ## 优势
 * 支持Android 8.0
 * 最低兼容API 19
 * Android 6.0 自动申请相机和读写权限
-* 去重
+* 去重，去重，去重
 * 无限选择张数;
+
+## 样式修改
+* 可以直接在自己的主项目里新建名字相同的资源文件，目前只支持，文案，颜色，和部分图片的修改，不建议修改styles
+
+### String
+<table>
+    <tr>
+        <td>名称</td>
+        <td>内容</td>
+        <td>说明</td>
+    </tr>
+    <tr>
+        <td>photo_picker_lib_crop</td>
+        <td>裁剪</td>
+        <td>选择一张剪裁的图片，底部按钮文字</td>
+    </tr>
+    <tr>
+        <td>photo_picker_lib_cancel</td>
+        <td>取消</td>
+        <td>选择一张剪裁的图片，底部按钮文字</td>
+    </tr>
+    <tr>
+        <td>photo_picker_lib_finish</td>
+        <td>完成</td>
+        <td>选择多张图片，顶部按钮文字</td>
+    </tr>
+    <tr>
+        <td>photo_picker_lib_all_photo</td>
+        <td>全部照片</td>
+        <td>选择多张图片，顶部默认title</td>
+    </tr>
+    <tr>
+        <td>photo_picker_lib_max_hint</td>
+        <td>您最多只能选择%1$d张照片！</td>
+        <td>选择多张有限的图片，当选择数量达到</td>
+    </tr>
+    <tr>
+        <td>photo_picker_lib_save_hint</td>
+        <td>无法保存照片，请检查SD卡是否可用</td>
+        <td>文件存储异常是提示</td>
+    </tr>
+</table>
 
 ## 流程图
 
@@ -31,6 +76,18 @@
     context -
 
     cropWH - 裁剪宽高
+
+    callBack - 选择图片回调
+
+* 得到一张长方形裁剪的图片
+
+#### static void	selectPic(android.app.Activity context, int cropW, int cropH, PhotoPicker.PicCallBack callBack)
+
+    context -
+
+    cropW - 裁剪宽
+
+    cropW - 裁剪高
 
     callBack - 选择图片回调
 

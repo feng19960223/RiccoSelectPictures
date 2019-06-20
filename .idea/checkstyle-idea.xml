@@ -4,7 +4,8 @@
     <option name="configuration">
       <map>
         <entry key="active-configuration" value="LOCAL_FILE:D:/develop/Android/Android Studio/tg-checkstyle-20171005.xml:checkstyle-20171005" />
-        <entry key="checkstyle-version" value="8.4" />
+        <entry key="checkstyle-version" value="8.5" />
+        <entry key="copy-libs" value="true" />
         <entry key="location-0" value="BUNDLED:(bundled):Sun Checks" />
         <entry key="location-1" value="BUNDLED:(bundled):Google Checks" />
         <entry key="location-2" value="LOCAL_FILE:D:/develop/Android/Android Studio/tg-checkstyle-20171005.xml:checkstyle-20171005" />
