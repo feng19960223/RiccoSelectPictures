@@ -210,6 +210,8 @@
 
 https://github.com/feng19960223/RiccoSelectPictures/blob/master/app/release/app-release.apk
 
+<img src="https://github.com/feng19960223/RiccoSelectPictures/blob/master/screenshots/%E5%89%AA%E8%A3%81%E6%AD%A3%E6%96%B9%E5%BD%A2.png" width="260"/>
+
 # 效果图
 
 <img src="https://github.com/feng19960223/RiccoSelectPictures/blob/master/screenshots/%E5%89%AA%E8%A3%81%E6%AD%A3%E6%96%B9%E5%BD%A2.png" width="260"/> <img src="https://github.com/feng19960223/RiccoSelectPictures/blob/master/screenshots/%E5%89%AA%E8%A3%81%E9%95%BF%E6%96%B9%E5%BD%A2.png" width="260" /> <img src="https://github.com/feng19960223/RiccoSelectPictures/blob/master/screenshots/%E9%80%89%E6%8B%A9%E5%85%B6%E4%BB%96%E7%9B%AE%E5%BD%95.png" width="260" />
