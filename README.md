@@ -208,12 +208,8 @@
 
 # 效果图
 
-![选择一张照片.png](http://upload-images.jianshu.io/upload_images/4325663-9fd8416f6e7243c9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/310 "选择一张照片")
-
-![选择菜单栏.png](http://upload-images.jianshu.io/upload_images/4325663-ede39c9daabb68de.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/310 "选择菜单栏")
-
-![一张图片剪裁.png](http://upload-images.jianshu.io/upload_images/4325663-46612e4df14dd0fc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/310 "一张图片剪裁")
-
-![指定张图片.png](http://upload-images.jianshu.io/upload_images/4325663-9b0c3d0b71f07a1d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/310 "指定张图片")
-
-![无限张图片.png](http://upload-images.jianshu.io/upload_images/4325663-5c3be6e76b6ae9e3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/310 "无限张图片")
+<img src="https://github.com/feng19960223/RiccoSelectPictures/blob/master/screenshots/%E5%89%AA%E8%A3%81%E6%AD%A3%E6%96%B9%E5%BD%A2.png" width="260" />
+<img src="https://github.com/feng19960223/RiccoSelectPictures/blob/master/screenshots/%E5%89%AA%E8%A3%81%E9%95%BF%E6%96%B9%E5%BD%A2.png" width="260" />
+<img src="https://github.com/feng19960223/RiccoSelectPictures/blob/master/screenshots/%E9%80%89%E6%8B%A9%E5%85%B6%E4%BB%96%E7%9B%AE%E5%BD%95.png" width="260" />
+<img src="https://github.com/feng19960223/RiccoSelectPictures/blob/master/screenshots/%E9%80%89%E6%8C%87%E5%AE%9A%E5%BC%A0.png" width="260" />
+<img src="https://github.com/feng19960223/RiccoSelectPictures/blob/master/screenshots/%E9%80%89%E6%97%A0%E9%99%90%E5%BC%A0.png" width="260" />
