@@ -130,6 +130,9 @@ public class CropUtil {
         }
     }
 
+    /**
+     * 返回图片最小边要放大到屏幕斜长需要多少倍
+     */
     public static int calculateBitmapSampleSize(Context context, Uri uri) throws IOException {
         InputStream is = null;
         BitmapFactory.Options options = new BitmapFactory.Options();
@@ -144,12 +147,15 @@ public class CropUtil {
         int maxSize = getMaxImageSize(context);
         int sampleSize = 1;
         while (options.outHeight / sampleSize > maxSize || options.outWidth / sampleSize > maxSize) {
-            sampleSize = sampleSize << 1;
+            sampleSize = sampleSize << 1; // 2 4 8 16 32 64 成倍网上加
         }
 
         return sampleSize;
     }
 
+    /**
+     * 屏幕左上角到屏幕右下角的长度，勾股定理
+     */
     private static int getMaxImageSize(Context context) {
         WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
         Display display = wm.getDefaultDisplay();

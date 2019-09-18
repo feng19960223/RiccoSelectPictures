@@ -17,9 +17,19 @@ import lib.ricco.photo.PhotoPicker;
 import lib.ricco.photo.R;
 import lib.ricco.photo.crop.CropView;
 import lib.ricco.photo.pick.PhotoOptions;
+import lib.ricco.photo.util.ClickUtils;
 import lib.ricco.photo.util.CropUtil;
 
 public class CropActivity extends Activity implements View.OnClickListener {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_crop);
+        initView();
+        initEvent();
+        initData();
+    }
 
     /**
      * 开启裁剪
@@ -37,15 +47,6 @@ public class CropActivity extends Activity implements View.OnClickListener {
     private CropView cropView;
     private TextView tvCancel;
     private TextView tvCrop;
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_crop);
-        initView();
-        initEvent();
-        initData();
-    }
 
     private void initView() {
         cropView = findViewById(R.id.crop_view);
@@ -67,6 +68,7 @@ public class CropActivity extends Activity implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
+        if (ClickUtils.doubleClick(v)) return;
         if (v == tvCancel) {
             finish();
         }

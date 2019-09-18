@@ -39,6 +39,7 @@ import lib.ricco.photo.permission.PermissionListener;
 import lib.ricco.photo.permission.PermissionManager;
 import lib.ricco.photo.pick.PhotoFolderPopupWindow;
 import lib.ricco.photo.pick.PhotoOptions;
+import lib.ricco.photo.util.ClickUtils;
 import lib.ricco.photo.util.CropUtil;
 import lib.ricco.photo.util.PhotoProviderUtil;
 
@@ -172,6 +173,7 @@ public class TackPhotoActivity extends Activity implements View.OnClickListener,
 
     @Override
     public void onClick(View v) {
+        if (ClickUtils.doubleClick(v)) return;
         if (v == mIvBack)
             finish();
         if (v == mLlTitleContainer)

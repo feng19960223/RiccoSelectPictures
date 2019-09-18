@@ -3,10 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/RiccoSelectPictures.iml" filepath="$PROJECT_DIR$/.idea/RiccoSelectPictures.iml" />
-      <module fileurl="file://$PROJECT_DIR$/RiccoSelectPictures.iml" filepath="$PROJECT_DIR$/RiccoSelectPictures.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/riccoPhoto/riccoPhoto.iml" filepath="$PROJECT_DIR$/riccoPhoto/riccoPhoto.iml" />
       <module fileurl="file://$PROJECT_DIR$/riccoPhoto/riccoPhoto.iml" filepath="$PROJECT_DIR$/riccoPhoto/riccoPhoto.iml" />
     </modules>
   </component>
