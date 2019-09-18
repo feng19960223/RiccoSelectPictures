@@ -324,7 +324,7 @@ public class TackPhotoActivity extends Activity implements View.OnClickListener,
         public View getView(int position, View convertView, ViewGroup parent) {
             ViewHolder holder;
             if (convertView == null) {
-                View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_photo, parent, false);
+                View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_photor, parent, false);
                 holder = new ViewHolder(view);
             } else {
                 holder = (ViewHolder) convertView.getTag();

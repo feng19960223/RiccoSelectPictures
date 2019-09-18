@@ -14,5 +14,4 @@
         <activity android:name=".activity.TackPhotoActivity" />
         <activity android:name=".activity.CropActivity" />
     </application>
-
 </manifest>
