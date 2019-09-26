@@ -66,6 +66,10 @@ public class TackPhotoActivity extends Activity implements View.OnClickListener,
         super.onCreate(savedInstanceState);
         getWindow().requestFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_tack_photo);
+        if (photoOptions == null) {
+            finish();
+            return;
+        }
         if (photoOptions.paths != null)
             mSelectPhotos.addAll(Arrays.asList(photoOptions.paths)); // 已有数据
         initView();

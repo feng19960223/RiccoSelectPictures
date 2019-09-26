@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorRiccoPrimary">#3F51B5</color>
-    <color name="colorRiccoPrimaryDark">#303F9F</color>
-    <color name="colorRiccoAccent">#FF4081</color>
-    <color name="color_ricco_btn_normal">#FFFF4081</color>
-    <color name="color_ricco_btn_pressed">#CCFF4081</color>
+    <color name="colorRiccoPrimary">#FFFFFF</color>
+    <color name="colorRiccoPrimaryDark">#FFFFFF</color>
+    <color name="colorRiccoAccent">#FF3096FA</color>
+    <color name="color_ricco_btn_normal">#FF3096FA</color>
+    <color name="color_ricco_btn_pressed">#FF3096FA</color>
 </resources>

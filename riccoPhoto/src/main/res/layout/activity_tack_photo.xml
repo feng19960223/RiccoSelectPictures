@@ -32,7 +32,7 @@
                 android:layout_height="match_parent"
                 android:gravity="center_vertical"
                 android:text="@string/photo_picker_lib_all_photo"
-                android:textColor="#FFFFFFFF" />
+                android:textColor="#FF103152" />
 
             <ImageView
                 android:id="@+id/photo_picker_iv_arrow"
