@@ -9,10 +9,10 @@ import android.widget.ImageView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.request.RequestOptions;
-import com.hema58.app.join.widget.CustomTouchPhotoView;
 
 import lib.ricco.photo.R;
 import lib.ricco.photo.util.ClickUtils;
+import lib.ricco.photo.widget.CustomTouchPhotoView;
 
 /**
  * <p>时间：2019/10/23<p>

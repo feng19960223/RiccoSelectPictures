@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.hema58.app.join.widget.CustomTouchPhotoView
+    <lib.ricco.photo.widget.CustomTouchPhotoView
         android:id="@+id/customTouchPhotoView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

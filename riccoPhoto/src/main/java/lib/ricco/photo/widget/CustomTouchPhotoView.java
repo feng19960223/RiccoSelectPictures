@@ -1,4 +1,4 @@
-package com.hema58.app.join.widget;
+package lib.ricco.photo.widget;
 
 import android.content.Context;
 import android.graphics.Canvas;
