@@ -230,6 +230,7 @@ public class TackPhotoActivity extends Activity implements View.OnClickListener,
      */
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        if (ClickUtils.doubleClick(view)) return;
         if (position == 0) {
             // 打开相机拍照，并返回相片
             toOpenCamera();
@@ -238,7 +239,7 @@ public class TackPhotoActivity extends Activity implements View.OnClickListener,
             String path = mAllPhotos.get(position - 1);
             // 单张并开启裁剪
             if (photoOptions.crop && photoOptions.takeNum == 1) {
-                CropActivity.startSelect(this, path, photoOptions, picCallBack);
+                CropPhotoActivity.startSelect(this, path, photoOptions, picCallBack);
                 finish();
             } else if (photoOptions.takeNum == 1) {
                 // 单张不开启裁剪
@@ -246,8 +247,9 @@ public class TackPhotoActivity extends Activity implements View.OnClickListener,
                 finish();
             } else {
                 // 多张
-                GVAdapter.ViewHolder tag = (GVAdapter.ViewHolder) view.getTag();
-                tag.mCbCheck.setChecked(!tag.mCbCheck.isChecked());
+                LookPhotoActivity.startSelect(this, path);
+                // GVAdapter.ViewHolder tag = (GVAdapter.ViewHolder) view.getTag();
+                // tag.mCbCheck.setChecked(!tag.mCbCheck.isChecked());
             }
         }
     }
@@ -301,7 +303,7 @@ public class TackPhotoActivity extends Activity implements View.OnClickListener,
             sendBroadcast(localIntent);
             // 需要裁剪
             if (photoOptions.crop && photoOptions.takeNum < 2) {
-                CropActivity.startSelect(this, path, photoOptions, picCallBack);
+                CropPhotoActivity.startSelect(this, path, photoOptions, picCallBack);
                 finish();
             }
         }

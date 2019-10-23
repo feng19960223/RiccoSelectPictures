@@ -20,12 +20,12 @@ import lib.ricco.photo.pick.PhotoOptions;
 import lib.ricco.photo.util.ClickUtils;
 import lib.ricco.photo.util.CropUtil;
 
-public class CropActivity extends Activity implements View.OnClickListener {
+public class CropPhotoActivity extends Activity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_crop);
+        setContentView(R.layout.activity_crop_photo);
         initView();
         initEvent();
         initData();
@@ -38,7 +38,7 @@ public class CropActivity extends Activity implements View.OnClickListener {
         mUrl = url;
         photoOptions = options;
         picCallBack = callBack;
-        context.startActivity(new Intent(context, CropActivity.class));
+        context.startActivity(new Intent(context, CropPhotoActivity.class));
     }
 
     private static String mUrl;

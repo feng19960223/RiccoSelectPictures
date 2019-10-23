@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".activity.TackPhotoActivity" />
-        <activity android:name=".activity.CropActivity" />
+        <activity android:name=".activity.CropPhotoActivity" />
+        <activity android:name=".activity.LookPhotoActivity" />
     </application>
 </manifest>
