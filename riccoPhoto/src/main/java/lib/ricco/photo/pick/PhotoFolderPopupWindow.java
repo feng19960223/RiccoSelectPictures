@@ -137,7 +137,11 @@ public class PhotoFolderPopupWindow extends PopupWindow implements View.OnAttach
             if (fnums != null && fnums.size() > 0) {
                 tv_size.setText(String.format("(%s)", fnums.size()));
                 String path = fnums.get(0);
-                GlideApp.with(iv_image.getContext()).load(path).centerCrop().into(iv_image);
+                try {
+                    GlideApp.with(iv_image.getContext()).load(path).centerCrop().into(iv_image);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
         }
     }
