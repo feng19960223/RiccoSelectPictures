@@ -258,34 +258,39 @@ public class TackPhotoActivity extends Activity implements View.OnClickListener,
      * 开启相机拍照
      */
     private void toOpenCamera() {
-        // 判断是否挂载了SD卡
-        mCamImageName = null;
-        String savePath = "";
-        if (CropUtil.hasSDCard()) {
-            savePath = CropUtil.getCameraPath();
-            File saveDir = new File(savePath);
-            if (!saveDir.exists())
-                saveDir.mkdirs();
+        try {
+            // 判断是否挂载了SD卡
+            mCamImageName = null;
+            String savePath = "";
+            if (CropUtil.hasSDCard()) {
+                savePath = CropUtil.getCameraPath();
+                File saveDir = new File(savePath);
+                if (!saveDir.exists())
+                    saveDir.mkdirs();
+            }
+            // 没有挂载SD卡，无法保存文件
+            if (TextUtils.isEmpty(savePath)) {
+                Toast.makeText(this, getString(R.string.photo_picker_lib_save_hint), Toast.LENGTH_LONG).show();
+                return;
+            }
+            mCamImageName = CropUtil.getSaveImageFullName();
+            File out = new File(savePath, mCamImageName);
+            // android N 系统适配
+            Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+            Uri uri;
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+                ContentValues contentValues = new ContentValues(1);
+                contentValues.put(MediaStore.Images.Media.DATA, out.getAbsolutePath());
+                uri = getContentResolver().insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, contentValues);
+            } else {
+                uri = Uri.fromFile(out);
+            }
+            intent.putExtra(MediaStore.EXTRA_OUTPUT, uri);
+            startActivityForResult(intent, 0x03);
+        } catch (Exception e) {
+            e.printStackTrace();
+            Toast.makeText(this, "打开相机失败", Toast.LENGTH_SHORT);
         }
-        // 没有挂载SD卡，无法保存文件
-        if (TextUtils.isEmpty(savePath)) {
-            Toast.makeText(this, getString(R.string.photo_picker_lib_save_hint), Toast.LENGTH_LONG).show();
-            return;
-        }
-        mCamImageName = CropUtil.getSaveImageFullName();
-        File out = new File(savePath, mCamImageName);
-        // android N 系统适配
-        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        Uri uri;
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-            ContentValues contentValues = new ContentValues(1);
-            contentValues.put(MediaStore.Images.Media.DATA, out.getAbsolutePath());
-            uri = getContentResolver().insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, contentValues);
-        } else {
-            uri = Uri.fromFile(out);
-        }
-        intent.putExtra(MediaStore.EXTRA_OUTPUT, uri);
-        startActivityForResult(intent, 0x03);
     }
 
     @Override
